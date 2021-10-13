@@ -1,0 +1,198 @@
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background: rgb(53, 66, 56);
+    padding: 0 !important;
+}
+.navbar-brand h1{
+    height: 40px;
+    padding-left: 50px;
+    font-size: 40px;
+}
+.navbar-login i{
+    height: 35px;
+    font-size: 35px;
+    margin-left: 100px;
+}
+.navbar-cart i{
+    height: 35px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+@media only screen and (min-width: 400px){
+    .navbar-login i {
+        align-items: center;
+    }
+    .navbar-cart i {
+        align-items: center;
+    }
+}
+
+
+.navbar-brand span{
+    color: rgb(233, 193, 14);
+}
+.navbar-brand span1{
+    color: #fff;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.navbar-nav li a:hover{
+    border-bottom: 3px solid green;
+    transition: 0.5s;
+    line-height: 1.4rem;
+}
+.navbar-toggler{
+    color: #fff;
+    font-size: 25px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+
+/* *******************home section****************** */
+.carousel-item img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+.carousel-control-next-icon{
+    background-color: darkgreen;
+}
+
+.carousel-control-prev-icon{
+    background-color: darkgreen;
+}
+.carousel-item p{
+    color: rgb(21, 54, 243);
+    font-weight: 600;
+}
+.carousel-item h5{
+    color: darkorange;
+    font-weight: 600;
+}
+
+/* ******************product section*************** */
+#product{
+    background-color: black;
+}
+#product h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.5rem;
+}
+#product img{
+    width: 350px;
+    height: 350px;
+}
+/* .product-content{
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 3px 5px 6px;
+} */
+.product-content:hover{
+    background-color: rgb(63, 59, 59);
+}
+.product-content h2{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.icon {
+    padding-left: 34%;
+}
+.icon i{
+    color: peru;
+}
+.price-section i{
+    font-size: 1.5rem;
+}
+.price-section  span{
+    color: darkred;
+}
+.price-section  h2{
+    font-size: 1rem;
+}
+.price-section p{
+    color: grey;
+}
+
+/* -----------------------All items section-------------------- */
+#items h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.items-images img:hover{
+    box-shadow: 0 2px 3px 4px;
+}
+.items-images img{
+    padding-right: 6px;
+    margin-left: 15px;
+}
+.price-info h2{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(24, 24, 24);
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.price-info h3{
+    font-size: 1rem;
+    color: rgb(70, 165, 70);
+    text-align: center;
+}
+.price-info p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* -------------------------FOOTER SAECTION------------------------ */
+#footer{
+    background-color: rgb(70, 66, 66);
+}
+#footer h1{
+    color: rgb(233, 216, 216);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+#footer a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+#footer p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+hr:not([size]) {
+    height: 3px;
+    color: #fff;
+}
+.footer-icon i{
+    color: yellow;
+}
+.footer-icon span{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 1rem;
+}

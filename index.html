@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce website</title>
+</head>
+
+<body>
+    <!-- -----------navbar section------------------------------ -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h1><span>E-</span>
+                        <span1>SH</span1><span>OP</span>
+                    </h1>
+                </a>
+                <a class="navbar-login" href="login.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <a class="navbar-cart" href="checkout.html">
+                    <i class="fas fa-cart-plus"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </section>
+
+    <!-- --------------------main home section----------------------- -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cloth1.png" style="width:300px; height:600px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/shirt1.png"  style="width:300px; height:600px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/shoe1.png"  style="width:300px; height:600px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- --------------------product section------------------>
+<section id="product">
+    <h1>Upcoming Gadgets</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/watch1.png" style="align-items: center;" >
+                    <h2>Apple Lignt Watch</h2>
+                    <div class="icon">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price-section">
+                        <h2><i class="fas fa-rupee-sign"></i>  15,900.00 <span>-23%</span><p class="text-decoration-line-through">20,900.00</p></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/watch4.png">
+                    <h2>Apple black Watch</h2>
+                    <div class="icon">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price-section">
+                        <h2><i class="fas fa-rupee-sign"></i>  18,900.00 <span>-20%</span><p class="text-decoration-line-through">23,900.00</p></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/phone1.png">
+                    <h2>One Plus Nord</h2>
+                    <div class="icon">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price-section">
+                        <h2><i class="fas fa-rupee-sign"></i>  27000.00 <span>-10%</span><p class="text-decoration-line-through">30000.00</p></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<!-- -------------------All items section------------------------->
+
+<section id="items">
+    <h2>Today's Fashion Deals</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/cloth2.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/shoe5.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/shirt4.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/watch2.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/cloth3.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center ">
+                <div class="items-images">
+                    <img src="images/shoe4.png" style="width: 200px;" height="200px" >
+                </div>
+                <div class="price-info">
+                    <h2>Spykar, Killer, Pepe</h2>
+                    <h3>50-60% OFF</h3>
+                    <p>Jeans at Crazy Prices</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------shoping section--------------------------- -->
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/sound.jpeg" style="height: 15rem;" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Fancy Product</h5>
+                            <!-- Product price-->
+                            $40.00 - $80.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/phone2.png" style="height: 13rem; width: 16rem;" >
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Special Item</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$20.00</span>
+                            $18.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/tv.jpeg" style="height: 15rem;" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Sale Item</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$50.00</span>
+                            $25.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/trim.jpeg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Popular Item</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $40.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/watch3.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Sale Item</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$50.00</span>
+                            $25.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/headphone.webp" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Fancy Product</h5>
+                            <!-- Product price-->
+                            $120.00 - $280.00
+                        </div>
+                    </div>
+                     <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/hoody.webp" style="height: 14rem;" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Special Item</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$20.00</span>
+                            $18.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/camera.webp" style="height: 14rem;" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Popular Item</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $40.00
+                        </div>
+                    </div>
+                    <!-- ---------select items-------- -->
+                    <input type="hidden" name="products[0395][product_id]" value="29" class="HiddenInput">
+                    <div class="FormItem BuyFormQuantity">
+                        <label for="BuyFormQuantity-0395" style="margin-left: 4rem;" >Quantity:</label>
+                        <input type="number" id="BuyFormQuantity-0395" name="products[0395][quantity]" size="3" min="0" value="1" style="margin-left: 1rem; margin-bottom: 5px; " >
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -----------------brand section--------------------- -->
+<section id="brand-section" class="brand-section" style="margin-bottom: 2rem;" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 text-center ">
+                <div class="slider">
+                    <img src="images/realme.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center ">
+                <div class="slider">
+                    <img src="images/narzo.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center " >
+                <div class="slider">
+                    <img src="images/poco.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center ">
+                <div class="slider">
+                    <img src="images/samsung.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center ">
+                <div class="slider">
+                    <img src="images/apple.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center ">
+                <div class="slider">
+                    <img src="images/infix.jpg" style="width: 150px; height: auto; " >
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ----------------------footer section--------------- -->
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <h1>ABOUT</h1>
+                <a href="#">Contact us</a><br>
+                <a href="#">About us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">E-Shop stories</a><br>
+                <a href="#">E-Shop wholesale</a>
+            </div>
+            <div class="col-md-2 text-center">
+                <h1>HELP</h1>
+                <a href="#">Payments</a><br>
+                <a href="#">Shipping</a><br>
+                <a href="#">Cancellation $ Return</a><br>
+                <a href="#">FAQ</a><br>
+            </div>
+            <div class="col-md-2 text-center ">
+                <h1>POLICY</h1>
+                <a href="#">Return Policy</a><br>
+                <a href="#">Terms Of Use</a><br>
+                <a href="#">Security</a><br>
+                <a href="#">Privacy</a><br>
+            </div>
+            <div class="col-md-2 text-center">
+                <h1>SOCIAL</h1>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Youtube</a><br>
+            </div>
+            <div class="col-md-2 text-center">
+                <h1>MAIL US</h1>
+                <p>E-commerce Private Limited,
+                    Buildings Xyz Tower, New Delhi &
+                    South Delhi, 
+                    New Delhi +91-1234567890,
+                    New Delhi, India</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <h1>Registration Office</h1>
+                <p>E-commerce Private Limited,
+                    Buildings Xyz Tower, New Delhi &
+                    South Delhi, 
+                    New Delhi +91-1234567890,
+                    New Delhi, India</p>
+            </div>
+            <hr>
+        <div class="row" style="margin-top: 1rem; margin-bottom: 2rem; " >
+            <div class="col-md-2">
+                <div class="footer-icon">
+                    <i class="fas fa-shopping-bag"><span>Sale on E-Shop</span></i>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-icon">
+                    <i class="fas fa-search-dollar"><span>Advertise</span></i>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-icon">
+                    <i class="fas fa-gift"><span>Gift Card</span></i>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-icon">
+                    <i class="fas fa-question"><span>Helps Center</span></i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/visa.svg">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+</body>
+
+</html>
